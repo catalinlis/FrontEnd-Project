@@ -4,24 +4,20 @@ import { MatSidenav, MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatButtonModule } from "@angular/material/button";
-import { FirstDesignComponent } from "./designs/first-design/first-design.component";
-import { FirstStyleComponent } from './designs/first-style/first-style.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-first-design',
   standalone: true,
   imports: [
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
-    MatButtonModule,
-    FirstDesignComponent,
-    FirstStyleComponent
-],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    MatButtonModule
+  ],
+  templateUrl: './first-design.component.html',
+  styleUrl: './first-design.component.css'
 })
-export class AppComponent {
+export class FirstDesignComponent {
   
 }
